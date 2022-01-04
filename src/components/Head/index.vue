@@ -187,7 +187,7 @@ export default defineComponent({
       <span v-if="nav?.icon">&nbsp;</span>
       <span v-if="nav?.svg" v-html="nav.svg" />
       <span v-if="nav?.svg">&nbsp;</span>
-      <span>{{ nav.icon || nav.svg ? nav.name : nav}}</span>
+      <span>{{ (nav.icon || nav.svg) ? nav.name : nav}}</span>
     </div>
   </div>
 </template>

@@ -12,29 +12,16 @@ export default defineConfig({
     entries: 'vant/es/**/*.js'
   },
   resolve: {
-    // alias: {
-    //   "@": path.resolve(__dirname, "src"),
-    // },
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+      // 为了编写模板组件
+      'vue': 'vue/dist/vue.esm-bundler.js'
+    },
     // { find: /^~/, replacement: "" }, 
-    alias: [{ find: '@', replacement: path.resolve(__dirname, "src")}],
+    // alias: [{ find: '@', replacement: path.resolve(__dirname, "src")}],
   },
   plugins: [
     vue(),
-    // vant 按需加载
-    // vitePluginImp({
-    //   libList: [
-    //     {
-    //       libName: 'vant',
-    //       style(name) {
-    //         if (/CompWithoutStyleFile/i.test(name)) {
-    //           // This will not import any style file 
-    //           return false
-    //         }
-    //         return `vant/es/${name}/style/index.js`
-    //       }
-    //     },
-    //   ],
-    // }),
     // 按需加载
     styleImport({
       libs: [
@@ -66,10 +53,7 @@ export default defineConfig({
       less: {
         modifyVars: {
           // hack: `true; @import (reference) "${path.resolve('src/utils/utils.less')}";`,
-          
           hack: `true; @import "./src/utils/utils.less";`,
-          // ↓这行代码下一章讲
-          // ...generateModifyVars(),
         },
         javascriptEnabled: true,
       },
