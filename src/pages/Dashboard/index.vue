@@ -114,12 +114,12 @@ import { Button, Icon, Popup, Loading, Field, Overlay } from "vant";
 const MyComponent = {
   data() {
     return {
-      num: '2'
+      num: '2xx'
     }
   },
   // template: `<div>{{ num }}</div>`,
   render() {
-    return h('div', {}, this.num)
+    return h('span', {}, this.num)
   }
 }
 
@@ -256,7 +256,7 @@ async function showMore() {
         <!-- {{  typeof item === "string" ? item : <item /> }} -->
         <span v-if="typeof item === 'string'">{{ item }}</span>
         <span v-else>
-          <MyComponent />
+          <my-component />
         </span>
       </div>
     </div>

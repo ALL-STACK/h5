@@ -238,10 +238,10 @@
   resolved "https://registry.npmmirror.com/@types/node/download/@types/node-16.11.8.tgz?cache=0&sync_timestamp=1637262378612&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-16.11.8.tgz#a1aeb23f0aa33cb111e64ccaa1687b2ae0423b69"
   integrity sha512-hmT5gfpRkkHr7DZZHMf3jBe/zNcVGN+jXSL2f8nAsYfBPxQFToKwQlS/zES4Sjp488Bi73i+p6bvrNRRGU0x9Q==
 
-"@vant/icons@^1.7.1":
-  version "1.7.1"
-  resolved "https://registry.nlark.com/@vant/icons/download/@vant/icons-1.7.1.tgz?cache=0&sync_timestamp=1631954436455&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vant%2Ficons%2Fdownload%2F%40vant%2Ficons-1.7.1.tgz#49ae420302b5581e54e6894891e5a05bc76e9f87"
-  integrity sha1-Sa5CAwK1WB5U5olIkeWgW8dun4c=
+"@vant/icons@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.npmmirror.com/@vant/icons/-/icons-1.8.0.tgz#36b13f2e628b533f6523a93a168cf02f07056674"
+  integrity sha512-sKfEUo2/CkQFuERxvkuF6mGQZDKu3IQdj5rV9Fm0weJXtchDSSQ+zt8qPCNUEhh9Y8shy5PzxbvAfOOkCwlCXg==
 
 "@vant/popperjs@^1.1.0":
   version "1.1.0"
@@ -250,10 +250,10 @@
   dependencies:
     "@popperjs/core" "^2.9.2"
 
-"@vant/use@^1.3.4":
-  version "1.3.4"
-  resolved "https://registry.npmmirror.com/@vant/use/download/@vant/use-1.3.4.tgz#f99482d63682973a2775aa5c1a9cf906862a4f71"
-  integrity sha512-XvZkPCjcmEBhD+T3vB68thOG6P9jazld6aBTMenhbAQd4FT/x9AiKIWPJx4MvhYoSIWt7fju6K01XTJldWs1hw==
+"@vant/use@^1.3.6":
+  version "1.3.6"
+  resolved "https://registry.npmmirror.com/@vant/use/-/use-1.3.6.tgz#7618d3a72ad6cd622a8b3cbc693ed1540426a05b"
+  integrity sha512-3z+nywPaV2F5BdJO7RQxWlgfzJeEOmViD2yHMb7Tg+R4NR/7iQskqW8v2Cnv9FWSJgTOSHlcr7UzeLpiTAP4HA==
 
 "@vitejs/plugin-vue@^1.9.3":
   version "1.9.4"
@@ -1461,14 +1461,14 @@ upper-case@^2.0.2:
   dependencies:
     tslib "^2.0.3"
 
-vant@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.npmmirror.com/vant/download/vant-3.3.0.tgz#6b9c611b231c84f0837010afec8cb238ce540b74"
-  integrity sha512-OJHZAURaOfQv+GE22tzvRolaymB1i/wIpSqfsgCUs7mL8RWdPbXfRZE/4aoLhsyyLB8hRQE0R18TzUcDYbfhFA==
+vant@^3.4.8:
+  version "3.4.8"
+  resolved "https://registry.npmmirror.com/vant/-/vant-3.4.8.tgz#f8f2ac9db91aae05d652e617a7a50264c8a69ab9"
+  integrity sha512-xPAiPdCiaZbcdbVplVh4N2lmYzDAr2UdadkUHoa9uwfHS9/dab4f8TigfCFzlfAEk53U1J6w+6qZ+whtt4T3hw==
   dependencies:
-    "@vant/icons" "^1.7.1"
+    "@vant/icons" "^1.8.0"
     "@vant/popperjs" "^1.1.0"
-    "@vant/use" "^1.3.4"
+    "@vant/use" "^1.3.6"
 
 vite-plugin-imp@^2.0.9:
   version "2.0.9"

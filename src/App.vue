@@ -1,10 +1,10 @@
 <script setup="props, context" lang="ts">
-  import Head from '@/components/Head/index.vue'
+  import HeadLine  from '@/components/Head/index.vue'
 
 </script>
 
 <template>
-  <Head />
+  <head-line />
   <div class="wrapper">
    <router-view />
   </div>
@@ -14,6 +14,5 @@
   .wrapper {
     padding: 0 16px;
     margin-top: 16px;
-    
   }
 </style>

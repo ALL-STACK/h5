@@ -47,9 +47,9 @@ function handleClick(e: number) {
 
 <template>
   <div>about</div>
-  <Son @handleClick="handleClick" :count="state.count" :visible="state.visible">
+  <son @handleClick="handleClick" :count="state.count" :visible="state.visible">
     哈包儿
-  </Son>
+  </son>
   <br />
   <span>{{ state.count }}</span>
   <br />

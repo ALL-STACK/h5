@@ -4,12 +4,14 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
+    "serve": "vite",
+    "start": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "preview": "vite preview"
   },
   "dependencies": {
     "autoprefixer": "^10.4.0",
-    "vant": "^3.3.0",
+    "vant": "^3.4.8",
     "vite-plugin-style-import": "^1.4.0",
     "vue": "^3.2.16",
     "vue-router": "4.0.12"
