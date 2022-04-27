@@ -1,6 +1,6 @@
 <script setup="props, context" lang="ts">
   import HeadLine  from '@/components/Head/index.vue'
-
+  
 </script>
 
 <template>
@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<style>
+<style scoped lang="less">
   .wrapper {
     padding: 0 16px;
     margin-top: 16px;
