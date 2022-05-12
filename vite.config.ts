@@ -6,8 +6,10 @@ import autoprefixer from "autoprefixer";
 import styleImport from "vite-plugin-style-import";
 // import vitePluginImp from "vite-plugin-imp";
 
+const publicPath = '/m/';
 
 export default defineConfig({
+  base: publicPath,
   optimizeDeps: {
     entries: 'vant/es/**/*.js'
   },

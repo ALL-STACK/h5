@@ -68,7 +68,7 @@
 </style>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, render } from "vue";
 const component = {
   template: '<div>哈哈哈</div>'
 }
@@ -116,7 +116,7 @@ export default defineComponent({
   },
   setup(props) {
     
-  }
+  },
 })
 
 </script>
@@ -127,10 +127,10 @@ export default defineComponent({
       <svg
         fill="rgba(255,255,255, .75)"
         aria-hidden="true"
+        width="24"
         height="24"
         viewBox="0 0 16 16"
         version="1.1"
-        width="24"
         data-view-component="true"
         class="octicon octicon-three-bars"
       >

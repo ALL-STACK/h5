@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router';
 import 'amfe-flexible';
 import routes from '@/routes/index';
 import '@/assets/reset.less';
@@ -17,9 +17,10 @@ const vue = createApp({
     }
   }
 });
+// console.log(createWebHashHistory());
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory('/m/'),
   routes, 
 })
 

@@ -118,7 +118,7 @@ const MyComponent = {
     }
   },
   // template: `<div>{{ num }}</div>`,
-  render() {
+  render(): any {
     return h('span', {}, this.num)
   }
 }
@@ -198,7 +198,7 @@ function onPopup() {
   state.showPopup = !state.showPopup;
 }
 
-function onSubmit(values) {
+function onSubmit(values: any) {
   console.log("values: ", values);
 }
 
