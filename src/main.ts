@@ -20,7 +20,7 @@ const vue = createApp({
 // console.log(createWebHashHistory());
 
 const router = createRouter({
-  history: createWebHistory('/m/'),
+  history: createWebHistory('/'),
   routes, 
 })
 

@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <head-line />
+  <!-- <head-line /> -->
   <div class="wrapper">
    <router-view />
   </div>
@@ -12,7 +12,7 @@
 
 <style scoped lang="less">
   .wrapper {
-    padding: 0 16px;
-    margin-top: 16px;
+    // padding: 0 16px;
+    // margin-top: 16px;
   }
 </style>

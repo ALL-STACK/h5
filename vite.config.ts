@@ -9,7 +9,7 @@ import styleImport from "vite-plugin-style-import";
 const publicPath = '/m/';
 
 export default defineConfig({
-  base: publicPath,
+  base: '/',
   optimizeDeps: {
     entries: 'vant/es/**/*.js'
   },
