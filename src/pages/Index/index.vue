@@ -3,22 +3,29 @@
 
 <script setup lang="ts">
 import Nav from '@/components/Nav/index.vue';
-import { ref, watch } from 'vue';
+import Home from './Home/index.vue';
+import Msg from './Msg/index.vue';
+import Mine from './Mine/index.vue';
+import { ref, reactive } from 'vue';
 
-const navKey = ref(0);
-console.log('=== ',navKey.value);
+const state = reactive({
+  navKey: 0
+});
+// console.log('=== ',navKey.value);
 
-function handleClick() {
-
+function handleClick(navKey: number) {
+  state.navKey = navKey;
+  console.log('点了我', navKey);
+  
 }
 
 </script>
 
 <template>
   <div>
-     <div v-if="navKey === 0">首页</div>
-    <div v-if="navKey === 1">消息</div>
-    <div v-if="navKey === 2">我的</div>
-    <Nav :navKey="navKey" :handleClick="handleClick" />
+    <div v-if="state.navKey === 0"><Home /></div>
+    <div v-if="state.navKey === 1"><Msg /></div>
+    <div v-if="state.navKey === 2"><Mine /></div>
+    <Nav :navKey="state.navKey" :handleClick="handleClick" />
   </div>
 </template>

@@ -12,6 +12,7 @@
 
 <style scoped lang="less">
   .wrapper {
+    background-color: #fff;
     // padding: 0 16px;
     // margin-top: 16px;
   }
