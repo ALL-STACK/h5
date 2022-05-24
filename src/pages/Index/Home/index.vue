@@ -1,74 +1,70 @@
 <style scoped lang="less">
-.home-wrapper {
-  position: relative;
-  .home-banner-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    // & > img {
-    //   filter: blur(5px);
-    // }
-    .welcome-wrapper {
-      position: absolute;
-      left: 24px;
-      bottom: calc(100% - 170px);
-      color: #fff;
-      .welcome-text {
-        font-size: 12px;
-        margin-bottom: 12px;
-      }
-      .welcome-name {
-        font-size: 24px;
-      }
-    }
-  }
-  .home-content {
-    // border: thin red solid;
-    z-index: 2;
-    height: 100vh;
-    position: absolute;
-    top: 200px;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 30px 30px 0 0;
-  }
-}
+  @import url("./index.less");
 </style>
 
 <script setup lang="ts">
-import { onBeforeUnmount, onMounted } from 'vue';
+import { onBeforeUnmount, onMounted, ref, watch } from "vue";
 
-  const _this = this;
+const myRef = ref<any>(null);
+const scrollTop = ref<number>(0);
 
 
-  onMounted(() => {
-    console.log('2');
-    
-    const ref = _this;
-    console.log('???', ref);
-    
+function handleScroll() {
+  window.addEventListener("scroll", () => {
+    scrollTop.value = window.scrollY;
   });
+}
 
-  onBeforeUnmount(() => {
+onMounted(() => {
+  handleScroll();
 
-  })
+});
 
+watch(scrollTop, (newValue) => {
+
+  myRef.value.style.filter = `blur(${(newValue / 20).toFixed(1)}px)`;
+
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("scroll", () => { });
+});
 </script>
 
 <template>
   <div class="home-wrapper">
     <div class="home-banner-wrapper">
-      <img
-        src="https://img.xiaopiu.com/userImages/img259635180cbac5330.jpg"
-        alt=""
-      />
+      <img ref="myRef" src="https://img.xiaopiu.com/userImages/img259635180cbac5330.jpg" alt="" />
       <div class="welcome-wrapper">
         <div class="welcome-text">欢迎回来!</div>
         <div class="welcome-name">All Stack</div>
       </div>
     </div>
-    <div class="home-content" ref="home-content">
-      
+    <div class="home-content">
+      <div>
+        <div class="title-wrapper">
+          <div class="title">服务中心</div>
+          <div class="more">更多</div>
+        </div>
+        <div class="service-wrapper">
+          <div>访客管理</div>
+          <div>报事报修</div>
+          <div>工单管理</div>
+          <div>投诉建议</div>
+        </div>
+      </div>
+      <div>
+        <div class="title-wrapper">
+          <div>消息通知</div>
+          <div>更多</div>
+        </div>
+        <div>
+          <div>
+            。。。。
+          </div>
+          
+        </div>
+      </div>
     </div>
   </div>
 </template>
